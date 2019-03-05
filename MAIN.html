@@ -1,0 +1,267 @@
+<html>
+
+<head>
+    <title>
+        HOSPITAL MAIN PAGE
+    </title>
+    <link rel="stylesheet" href="Dropdown.css">
+    <link rel="stylesheet" href="loginStyle.css">
+    
+    <style>
+        body {
+            background-color :#BEF38F ;
+            margin-top: 30px;
+            margin-left: 30px;
+            margin-right: 50px;
+        }
+
+        p.modify {
+            font-size: 26px;
+        }
+
+        h1.modifyy {
+            font-size: 36px;
+        }
+
+        
+    </style>
+    
+</head>
+
+<body>
+
+    <img src="mainP/LOGOSA.jpg" width="100%" height="12%" margin="50px" style="position: static;" />
+
+    <table style="margin-top:18px;background-color: #4CAF50;width: 100%;position: static">
+        <tr>
+            <td>
+                <div class="dropdown">
+                    <button class="dropbtn">ABOUT US</button>
+                    <div class="dropdown-content">
+                        <a href="DropdownPages/aboutus.html#DD">Doctors</a>
+                        <a href="DropdownPages/aboutus.html#CHH">Commitment to Quality</a>
+                        <a href="DropdownPages/aboutus.html#OH">Our History</a>
+                        <a href="DropdownPages/aboutus.html#CC">Contact Us</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="dropdown">
+                    <button class="dropbtn">SERVICES & SPECIALITIES</button>
+                    <div class="dropdown-content">
+                        <a href="DropdownPages/Sercices.html#Heart">Cardiology</a>
+                        <a href="DropdownPages/Sercices.html#Dai">Daibities Management</a>
+                        <a href="DropdownPages/Sercices.html#ENT">ENT Management</a>
+                        <a href="DropdownPages/Sercices.html#ED">Eating Disorder</a>
+                        <a href="DropdownPages/Sercices.html#gen">Genetics</a>
+                        <a href="DropdownPages/Sercices.html#HC">Home care</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="dropdown">
+                    <button class="dropbtn">HOSPITALS & LOCATIONS</button>
+                    <div class="dropdown-content">
+                        <a href="#">Saint Francis Hospital </a>
+                        <a href="#">Saint Francis Hospital Muskogee</a>
+                        <a href="#">Saint Francis Hospital Vinita</a>
+                        <a href="#">Warren Clinic Specialty Care </a>
+                        <a href="#">Warren Clinic Pediatrics</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="dropdown">
+                    <button class="dropbtn">PATIENTS & VISITORS</button>
+                    <div class="dropdown-content">
+                        <a href="DropdownPages/PV.html#PI">For Patients</a>
+                        <a href="DropdownPages/PV.html#VI">For Visitors</a>
+                        <a href="DropdownPages/PV.html#SP">Smoking Policies</a>
+                        <a href="DropdownPages/PV.html#PC">Pastoral Care Services</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="dropdown">
+                    <button class="dropbtn">HEALTH & WELLNESS</button>
+                    <div class="dropdown-content">
+                        <a href="DropdownPages/Health&We.html">Adult Wellness Tips</a>
+                        <a href="DropdownPages/Health&We.html#CHT">Children's Wellness Tips</a>
+                        <a href="DropdownPages/Health&We.html#HT">Heart Wellness</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="dropdown">
+                    <button class="dropbtn">LOG IN</button>
+                    <div class="dropdown-content">
+                        <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Patient
+                            Login</a>
+
+
+                        <div id="id01" class="modal">
+
+                            <form class="modal-content animate" action="patientlogin.php" method="POST">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+                                    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                                </div>
+
+                                <div class="container">
+                                    <label for="PN"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="PN" required>
+
+                                    <label for="PP"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="PP" required>
+
+                                    <button type="submit">Login</button>
+                                    <a href="SignUp.html" >Sign up</a>
+                                </div>
+
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                        class="cancelbtn">Cancel</button>
+                                    <!--<span class="psw">Forgot <a href="#">password?</a></span> -->
+                                </div>
+                            </form>
+                        </div>
+
+                        <script>
+                            // Get the modal
+                            var modal = document.getElementById('id01');
+
+                            // When the user clicks anywhere outside of the modal, close it
+                            window.onclick = function (event) {
+                                if (event.target == modal) {
+                                    modal.style.display = "none";
+                                }
+                            }
+                        </script>
+                        <a onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Admin
+                            Login</a>
+
+
+                        <div id="id02" class="modal">
+
+                            <form class="modal-content animate" action="Adminlogin.php" method="post">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+                                    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                                </div>
+
+                                <div class="container">
+                                    <label for="AN"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="AN" required>
+
+                                    <label for="AP"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="AP" required>
+
+                                    <button type="submit">Login</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                </div>
+
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id02').style.display='none'"
+                                        class="cancelbtn">Cancel</button>
+                                    <span class="psw">Forgot <a href="#">password?</a></span>
+                                </div>
+                            </form>
+                        </div>
+
+                        <script>
+                            // Get the modal
+                            var modal = document.getElementById('id02');
+
+                            // When the user clicks anywhere outside of the modal, close it
+                            window.onclick = function (event) {
+                                if (event.target == modal) {
+                                    modal.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table style="width:100%;align-content:center;">
+        <tr style="width:100%;height: 300px;">
+                <script src="imageChanger.js"></script>
+            <td style="text-align: center" onclick="imageChanger(1)">
+                <!-- <img src="mainP/Leftarrow.png" width="20%"/> -->
+                &LeftAngleBracket;&LeftAngleBracket;
+            </td>
+            <td style="width:40%">
+                <img id="MID" src="mainP/1.jpg" width="1150px" height="300px" />
+            </td>
+            <td style="text-align: center" onclick="imageChanger(2)">
+                <!--<img src="mainP/rightarrow.png" width="20%"  /> -->
+                &RightAngleBracket;&RightAngleBracket;
+            </td>
+        </tr>
+    </table>
+    <h1 class="modifyy">Saint Francis Health System</h1>
+    <p class="modify">Saint Francis Health System is an integrated health
+        system with an emphasis on a complete continuum of care.
+        From services for the tiniest premature newborns,
+        to end-of-life care options and all medical needs in between,
+        the physicians and staff of Saint Francis treat each patient with dignity
+        and integrity.</p>
+    <h1 class="modifyy">Saint Francis Health System includes:</h1>
+    <p class="modify">The Children's Hospital, The Heart Hospital,
+        Laureate, Saint Francis Hospital, Saint Francis
+        Hospital Muskogee, Saint Francis Hospital South,
+        Saint Francis Hospital Vinita, Warren Clinic,
+        and many other departments and services.
+        Saint Francis is one of the leading multispeciality hospitals
+        in India, providing excellent health care to all.
+        Our advanced healthcare technology combined with years
+        of expertise of the best physicians ensures good health
+        for the surrounding community. We take every step to provide
+        a cure for our patients and bring smiles to their faces.
+        The highly dedicated and qualified doctors with ultra-modern amenities
+        together cater to the needs of all health issues which in turn leads to
+        successful recovery of the patients. Our treatment protocols blend the
+        most ethical and the most advanced Indian & Japanese medical practices.
+        Our excellent clinical practices deliver fast recovery to the patients
+        and help them to get back to their normal lives much sooner. We are leveraging
+        technology to facilitate seamless health care delivery.
+
+        Also, we are holding the pride of having the best heart specialists in India,
+        offering holistic services for the cardiac patients. Dr. Adil Sadiq, our Senior
+        Consultant & Head - Adult Cardiac Surgery, is a pioneer in Minimally Invasive
+        Cardiac Surgery (MICS). He has performed over 4500 cardiac surgeries successfully
+        which have helped our cardiac patients to continue beating for their loved ones.
+        Our neurosurgeons are specialised in performing the full spectrum of
+        neurosurgeries in patients of all ages. Dr. Satish Rudrappa, Senior
+        Consultant - Neurosurgery and Head - Dept. of Spine Surgery, is one
+        of the most eminent and distinguished senior neurosurgeons in India.
+        With his guidance, our team of neurosurgeons understand the complex
+        nature of the nervous system and apply the knowledge to enhance the
+        quality of human life.
+
+        The Sakra Institute for Orthopaedics is a frontrunner in offering
+        the latest orthopaedic treatments and surgical techniques. Our team
+        of doctors headed by Dr. Chandrashekar P, Senior Consultant &
+        HoD-Orthopaedics, has made a remarkable achievement by
+        successfully performing a rare meniscus transplant surgery
+        for the first time in the state of Karnataka. We have a team of
+        renowned organ transplant surgeons who are highly qualified and
+        have extensive experience and expertise in handling transplant
+        surgeries including liver transplants and kidney transplants.
+        Dr. Dineshvsvs , Director - Gastroenterology & Hepatology is
+        highly skilled and extensively trained in performing transplant
+        surgery that ensures superior results. By combining
+        state-of-the-art infrastructure with cutting-edge technology,
+        we eliminate the critical problems in healthcare with utmost
+        efficiency and accuracy.</p>
+
+
+</body>
+
+</html>

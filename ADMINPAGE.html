@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ADMIN PAGE</title>
+    <link rel="stylesheet" href="SignUp.css">
+</head>
+
+<body>
+    <h1>To ADD NEW EMPLOYEE DETAILS</h1>
+    <form action="AED.PHP" method="POST">
+        <div class="container">
+            <p>Please fill in this form to add employee details to the database.</p>
+            <hr>
+
+            <label for="EID"><b>Employee id</b></label>
+            <input type="text" placeholder="Enter Employee id" name="EID" required>
+
+            <label for="FN"><b>First Name</b></label>
+            <input type="text" placeholder="Enter First Name" name="FN" required>
+
+            <label for="MN"><b>Middle Name</b></label>
+            <input type="text" placeholder="Enter Single Char" name="MN">
+
+            <label for="LN"><b>Last Name</b></label>
+            <input type="text" placeholder="Enter Last Name" name="LN" required>
+
+            <label for="sex"><b>Sex</b></label>
+            <input type="text" placeholder="M OR F" name="sex" required>
+
+            <label for="emailid"><b>Email Id</b></label>
+            <input type="text" placeholder="emailid" name="emailid" required>
+
+            <label for="Cno"><b>Contact Number</b></label>
+            <input type="text" placeholder="Enter 10 digit number" name="Cno" required>
+
+            <label for="Salary"><b>Salary</b></label>
+            <input type="text" placeholder="Enter Salary in Rupees" name="Salary" required>
+
+            <hr>
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+            <button type="submit" class="registerbtn">ADD</button>
+        </div>
+
+    </form>
+
+    <h1>To DELETE A EMPLOYEE</h1>
+    <form action="DE.PHP" method="POST">
+        <div class="container">
+            <p>Please fill in this form to Delete Employee Tuple.</p>
+            <hr>
+
+            <label for="EID"><b>EMPLOYEE ID</b></label>
+            <input type="text" placeholder="Enter Eid" name="EID" required>
+
+            <label for="REID"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Eid" name="REID" required>
+            <hr>
+            <button type="submit" class="registerbtn">DELETE</button>
+        </div>
+
+    </form>
+
+
+    <h1>TO ADD A NEW PATIENT DETAILS</h1>
+    <form action="SU1.PHP" method="POST">
+        <div class="container">
+            <p>Please fill in this form to add patient details.</p>
+            <hr>
+            <label for="FN"><b>First Name</b></label>
+            <input type="text" placeholder="Enter First Name" name="FN" required>
+
+            <label for="MN"><b>Middle Name</b></label>
+            <input type="text" placeholder="Enter Single Char" name="MN">
+
+            <label for="LN"><b>Last Name</b></label>
+            <input type="text" placeholder="Enter Last Name" name="LN" required>
+
+            <label for="Age"><b>AGE</b></label>
+            <input type="text" placeholder="Enter Your Age" name="Age" required>
+
+            <label for="sex"><b>Sex</b></label>
+            <input type="text" placeholder="M OR F" name="sex" required>
+
+            <label for="emailid"><b>Email Id</b></label>
+            <input type="text" placeholder="emailid" name="emailid" required>
+
+            <label for="Cno"><b>Contact Number</b></label>
+            <input type="text" placeholder="Enter 10 digit number" name="Cno" required>
+
+            <label for="Address"><b>Address</b></label>
+            <input type="text" placeholder="Enter Address" name="Address" required>
+
+            <label for="ANO"><b>Addhar Number</b></label>
+            <input type="text" placeholder="Enter 10 digit Addhar Number" name="ANO" required>
+
+            <label for="SA"><b>Secrect Ans</b></label>
+            <input type="text" placeholder="In case forgot password" name="SA" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            <hr>
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+            <button type="submit" class="registerbtn">ADD</button>
+        </div>
+    </form>
+
+    <h1>TO RUN THE QUERY </h1>
+    <form action="QR.PHP" method="POST">
+
+        <label for="QUE"><b>Enter your query</b></label>
+        <input type="text" placeholder="Write your query" name="QUE" required>
+
+        <button type="submit" class="registerbtn">RUN THE QUERY</button>
+    </form>
+</body>
+
+</html>
